@@ -1,5 +1,3 @@
-console.log(compra(50, false, false));
-
 function compra(valor, convenio, cartaodaLoja) {
   let desconto = 0;
   if (convenio && cartaodaLoja) {
@@ -9,3 +7,5 @@ function compra(valor, convenio, cartaodaLoja) {
   }
   return valor - desconto;
 }
+
+console.log(compra(1000, true, true));
