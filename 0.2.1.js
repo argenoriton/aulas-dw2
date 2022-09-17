@@ -30,6 +30,9 @@ const anime3 = {
   nome: 'Sonny Boy',
   numdeEpisodios: 12,
   descricao:
-    'Um colégio vai parar em um lugar completamente diferente levando junto os estudantes, agora eles terão que descobrir como voltar para casa explorando seus poderes recém descobertos.',
+    'Estudantes de um colégio vão parar em um lugar completamente diferente e fora da realidade, agora eles tem que arrumar uma forma de voltar para casa e lidar com seus poderes recém descobertos.',
   personagensPrincipais: ['Nagara', 'Nozomi', 'Mizuho', 'Rajidani'],
 };
+
+console.log(anime3.descricao);
+console.log(anime3.personagensPrincipais);
