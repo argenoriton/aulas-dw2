@@ -16,15 +16,18 @@ const medicos = [
   },
 ];
 
-const apresentacaoMedicos = medicos.forEach((medico) => {
-  if (medicos.genero === 'masculino') {
-    let apresentacoes = 'Dr ' + medicos.nome + ' ' + medicos.sobrenome;
+const apresentacaoMedicos = medicos.forEach((apresentacao) => {
+  if (apresentacao.genero === 'masculino') {
+    let apresentacoes =
+      'Dr ' + apresentacao.nome + ' ' + apresentacao.sobrenome;
     console.log(apresentacoes);
-  } else if (medicos.genero === 'feminino') {
-    let apresentacoes = 'Dr(a) ' + medicos.nome + ' ' + medicos.sobrenome;
+  } else if (apresentacao.genero === 'feminino') {
+    let apresentacoes =
+      'Dr(a) ' + apresentacao.nome + ' ' + apresentacao.sobrenome;
     console.log(apresentacoes);
-  } else (medicos.genero === 'não-binario'){
-    let apresentacoes = 'Dr(e) ' + medicos.nome + ' ' + medicos.sobrenome;
+  } else {
+    let apresentacoes =
+      'Dr(e) ' + apresentacao.nome + ' ' + apresentacao.sobrenome;
     console.log(apresentacoes);
   }
 });
