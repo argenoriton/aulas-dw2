@@ -6,7 +6,7 @@ const tarefas = [
   },
   {
     titulo: 'Tomar Chimarrão',
-    concluida: false,
+    concluida: true,
     dias: 15,
   },
   {
@@ -26,16 +26,25 @@ const tarefas = [
   },
   {
     titulo: 'Curtir uma Festa',
-    concluida: true,
+    concluida: false,
     dias: 48,
   },
 ];
 
-const concluidas = tarefas.filter(({ concluida }) => concluida === true);
-console.log(concluidas);
+function concluidas() {
+  return tarefas.filter(({ concluida }) => concluida === true);
+}
 
-const naoConcluidas = tarefas.filter(({ concluida }) => concluida === false);
-console.log(naoConcluidas);
+function naoConcluidas() {
+  return tarefas.filter(({ concluida }) => concluida === false);
+}
 
-const menos30dias = concluidas.filter(({ dias }) => dias < 30);
-console.log(menos30dias);
+function menos30dias() {
+  return tarefas
+    .filter(({ concluida }) => concluida === true)
+    .filter(({ dias }) => dias < 30);
+}
+
+console.log(concluidas());
+console.log(naoConcluidas());
+console.log(menos30dias());
