@@ -6,11 +6,9 @@ function compra(valor, isConvenio, isCartaodaLoja, isPrimeiraCompra) {
     desconto = valor * 0.1;
   }
 
-  if (isPrimeiraCompra == true) {
-    desconto = desconto + valor * 0.05;
-  }
+  if (isPrimeiraCompra == true) desconto = desconto + valor * 0.05;
 
-  desconto > 100 ? (desconto = 100) : desconto;
+  if (desconto > 100) desconto = 100;
 
   return valor - desconto;
 }
