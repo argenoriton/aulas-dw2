@@ -37,5 +37,5 @@ console.log(concluidas);
 const naoConcluidas = tarefas.filter(({ concluida }) => concluida === false);
 console.log(naoConcluidas);
 
-const menos30dias = concluidas.filter(({ dias }) => dias <= 30);
+const menos30dias = concluidas.filter(({ dias }) => dias < 30);
 console.log(menos30dias);
