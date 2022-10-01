@@ -36,12 +36,12 @@ function concluidas() {
 }
 
 function naoConcluidas() {
-  return tarefas.filter(({ concluida }) => concluida === false);
+  return tarefas.filter(({ naoConcluida }) => naoConcluida === false);
 }
 
 function menos30dias() {
   return tarefas
-    .filter(({ naoConcluida }) => naoConcluida === true)
+    .filter(({ concluida }) => concluida === true)
     .filter(({ dias }) => dias < 30);
 }
 
