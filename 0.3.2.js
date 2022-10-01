@@ -41,7 +41,7 @@ function naoConcluidas() {
 
 function menos30dias() {
   return tarefas
-    .filter(({ concluida }) => concluida === true)
+    .filter(({ naoConcluida }) => naoConcluida === true)
     .filter(({ dias }) => dias < 30);
 }
 
