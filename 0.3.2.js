@@ -2,12 +2,12 @@ const tarefas = [
   {
     titulo: 'Assistir Netflix',
     concluida: false,
-    dias: 10,
+    dias: 20,
   },
   {
     titulo: 'Tomar Chimarrão',
     concluida: false,
-    dias: 5,
+    dias: 15,
   },
   {
     titulo: 'Curtir uma Praia',
@@ -16,7 +16,7 @@ const tarefas = [
   },
   {
     titulo: 'Assistir Amazon',
-    concluida: false,
+    concluida: true,
     dias: 10,
   },
   {
@@ -27,12 +27,15 @@ const tarefas = [
   {
     titulo: 'Curtir uma Festa',
     concluida: true,
-    dias: 60,
+    dias: 48,
   },
 ];
 
 const concluidas = tarefas.filter(({ concluida }) => concluida === true);
-const naoConcluidas = tarefas.filter(({ concluida }) => concluida === false);
-
-const concluidas = concluidas.filter(({ dias }) => dias < 30);
 console.log(concluidas);
+
+const naoConcluidas = tarefas.filter(({ concluida }) => concluida === false);
+console.log(naoConcluidas);
+
+const menos30dias = concluidas.filter(({ dias }) => dias <= 30);
+console.log(menos30dias);
