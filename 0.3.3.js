@@ -16,7 +16,7 @@ const medicos = [
   },
 ];
 
-const apresentacaoMedicos = medicos.forEach((apresentacao) => {
+medicos.forEach((apresentacao) => {
   if (apresentacao.genero === 'masculino') {
     let apresentacoes =
       'Dr ' + apresentacao.nome + ' ' + apresentacao.sobrenome;
