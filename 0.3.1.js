@@ -26,10 +26,8 @@ const filmesNome = filmes.map((filme) => {
   };
 });
 
-let id = 0;
-
-const IDFilmes = filmes.map((filme) => {
-  id++;
+const IDFilmes = filmes.map((filme, index) => {
+  const id = index + 1;
   return {
     id,
     nome: filme.nome,
