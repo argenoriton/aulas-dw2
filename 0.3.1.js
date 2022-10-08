@@ -28,7 +28,7 @@ const filmesNome = filmes.map((filme) => {
 
 let id = 0;
 
-const IDFilmes = filmesNome.map((filme) => {
+const IDFilmes = filmes.map((filme) => {
   id++;
   return {
     id,
