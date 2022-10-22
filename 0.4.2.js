@@ -27,7 +27,8 @@ const notas = alunos.map((aluno) => {
     const { nota } = _nota;
     return acc + nota;
   }, 0);
-  return (aluno.mediaGeral = notadoAluno / aluno.notas.length);
+  aluno.mediaGeral = notadoAluno / aluno.notas.length;
+  return aluno;
 });
 
 console.log(notas);
