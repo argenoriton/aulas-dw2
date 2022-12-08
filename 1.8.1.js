@@ -38,28 +38,26 @@ export default function App() {
   const handleOnClick = (value) => setExibir(value);
 
   return (
-    <div className="App">
-      <div>
-        <button onClick={() => handleOnClick('Listar')}>Listar</button>
-        <button onClick={() => handleOnClick('Baker')}>Baker</button>
-        <button onClick={() => handleOnClick('Redfield')}>Redfield</button>
+    <div>
+      <button onClick={() => handleOnClick('Listar')}>Listar</button>
+      <button onClick={() => handleOnClick('Baker')}>Baker</button>
+      <button onClick={() => handleOnClick('Redfield')}>Redfield</button>
 
-        {exibir === 'Baker' && (
-          <div>
-            <Personagens familia="baker" />
-          </div>
-        )}
-        {exibir === 'Redfield' && (
-          <div>
-            <Personagens familia="redfield" />
-          </div>
-        )}
-        {exibir === 'Listar' && (
-          <div>
-            <Personagens familia="" />
-          </div>
-        )}
-      </div>
+      {exibir === 'Baker' && (
+        <div>
+          <Personagens familia="baker" />
+        </div>
+      )}
+      {exibir === 'Redfield' && (
+        <div>
+          <Personagens familia="redfield" />
+        </div>
+      )}
+      {exibir === 'Listar' && (
+        <div>
+          <Personagens familia="" />
+        </div>
+      )}
     </div>
   );
 }
